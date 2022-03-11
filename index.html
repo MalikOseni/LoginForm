@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="primary-header flex">
+    <div>
+        <img src="css/pngtree-travel-logo-design-free-logo-design-template-png-image_2944350.jpg" alt="logo";>
+    </div>
+    <button aria-controls="pry-nav" aria-expanded="false"class="mobile-nav-toggle"><span class="sr-only">Menu</span></button>
+            
+<nav>
+    <ul class="primary-nav flex" id="primary-navigation" data-visible="false">
+        <li><a href="#" aria-hidden="false">Home</a></li>
+        <li><a href="#" aria-hidden="false">About Us</a></li>
+        <li><a href="#" aria-hidden="false">Services</a></li>
+        <li><a href="#" aria-hidden="false">Contact Us</a></li>
+        <li><button class="loginbtn" onclick="document.getElementById('login-form').style.display='block'" style="width: auto;" >Login</button></li>
+    </ul>
+
+</nav>
+</header>
+<div id="login-form" class="login-page">
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" onclick="login()" class="toggle-btn">Log In</button>
+            <button type="button" onclick="register()" class="toggle-btn">Register</button>
+        </div>
+        <form action="" id="login" class="input-group-login">
+            <input type="email" class="input-field" placeholder="email">
+            <input type="password" class="input-field" placeholder="Enter Passwor">
+            <input type="checkbox" class="check-box">
+            <span>Remember Password</span>
+            <button type="submit" class="submit-btn"> Login</button>
+        
+        </form>
+        <form action="" id="register" class="input-group-register">
+            <input type="text" class="input-field" placeholder="Name">
+            <input type="email" class="input-field" placeholder="email">
+            <input type="password" class="input-field" placeholder="Enter Passwor">
+            <input type="password" class="input-field" placeholder="Enter Passwor">
+            <input type="checkbox" class="check-box">
+            <span>Agree to Terms&Coditions</span>
+            <button type="submit" class="submit-btn"> Login</button>
+        
+        </form>
+    </div>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
